@@ -1,3 +1,4 @@
+import resolve from "resolve";
 
 export default {
     input: ["./src/index.js"],
@@ -5,5 +6,6 @@ export default {
         file: "./dist/bundle.js",
         format: "umd",
         name: "experience",
-    }
+    },
+    plugins: [resolve()],
 }

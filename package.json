@@ -11,5 +11,8 @@
     "build": "rollup -c -w"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^15.2.3"
+  }
 }
