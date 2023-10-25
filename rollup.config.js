@@ -1,3 +1,4 @@
+import commonjs from "@rollup/plugin-commonjs";
 import resolve from "resolve";
 
 export default {
@@ -7,5 +8,6 @@ export default {
         format: "umd",
         name: "experience",
     },
-    plugins: [resolve()],
+    plugins: [resolve(),commonjs()],
+    external: [],
 }
